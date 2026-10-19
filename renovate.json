@@ -1,0 +1,30 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["github>JorisJonkers-dev/renovate-config"],
+  "packageRules": [
+    {
+      "description": "A seerr minor or patch release merges once Pipeline Complete passes, and release.yml publishes it as this repository's version.",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["ghcr.io/seerr-team/seerr"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "semanticCommitType": "feat",
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true
+    },
+    {
+      "description": "A seerr major release waits for approval on the Dependency Dashboard.",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["ghcr.io/seerr-team/seerr"],
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    },
+    {
+      "description": "A digest moved under the same tag is no new version, so it cannot be released.",
+      "matchDatasources": ["docker"],
+      "matchPackageNames": ["ghcr.io/seerr-team/seerr"],
+      "matchUpdateTypes": ["digest"],
+      "enabled": false
+    }
+  ]
+}
