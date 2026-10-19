@@ -19,6 +19,10 @@ applications:
         engine: files # keys the nightly copy of its config
         provides:
           http: 5055
+        dependsOn: # optional: it starts without them
+          - { application: jellyfin, surface: http, required: false }
+          - { application: sonarr, surface: http, required: false }
+          - { application: radarr, surface: http, required: false }
         placement:
           memory: 768Mi
           cpu: 200m
