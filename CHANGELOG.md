@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.6.1](https://github.com/JorisJonkers-dev/jellyseerr/compare/v3.6.0...v3.6.1) (2026-10-21)
+
+
+### Miscellaneous Chores
+
+* Renovate alone updates dependencies, so Dependabot's fallback goes ([#9](https://github.com/JorisJonkers-dev/jellyseerr/issues/9)) ([c29d1e8](https://github.com/JorisJonkers-dev/jellyseerr/commit/c29d1e8b44326b8f39825ab231feb53db9e1f4ae))
+
 ## [3.6.0](https://github.com/JorisJonkers-dev/jellyseerr/compare/v3.5.0...v3.6.0) (2026-10-21)
 
 
