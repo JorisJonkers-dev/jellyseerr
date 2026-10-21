@@ -69,7 +69,7 @@ jobs:
       contents: read
       packages: write
       id-token: write
-    uses: JorisJonkers-dev/github-workflows/.github/workflows/publish-fragment.yml@bdc8ec412fdd619b57b8b8f2855cc7d3c5f76bad # v0.29.0
+    uses: JorisJonkers-dev/github-workflows/.github/workflows/publish-fragment.yml@870429202376dac2e9434746941c54f9a2be605f # v0.33.0
     with:
       project-file: deploy/jellyseerr.project.yml
       version: ${{ inputs.tag || github.ref_name }}
