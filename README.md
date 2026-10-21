@@ -13,12 +13,14 @@ does not allow.
 
 ## Versions
 
-This repository's version is seerr's: release `v3.5.0` runs seerr 3.5.0.
-Renovate opens a pull request for each seerr release. A minor or patch release
-merges itself once `Pipeline Complete` passes; a major release waits for
-approval on the Dependency Dashboard. When the `FROM` tag changes on `main`,
-`release.yml` releases that version and publishes the image and the Intent
-Fragment. A change that keeps the `FROM` tag ships with the next seerr release.
+This repository releases its own semver, continuing from `v3.5.0`, the last tag
+named after seerr. The seerr version the image ships is recorded separately, as
+the images lock's `version` (JorisJonkers-dev/workspace#140), so a fix to our
+configuration no longer waits for a seerr release. Renovate opens a pull
+request for each update, as a `fix`, so release-please releases it. A minor or
+patch update merges itself once `Pipeline Complete` passes; a major release
+waits for approval on the Dependency Dashboard. Merging release-please's pull
+request tags `vX.Y.Z`, which publishes the image and the Intent Fragment.
 
 ## Running it
 
