@@ -11,6 +11,20 @@ owner: joris
 
 applications:
   - id: jellyseerr
+    exposure:
+      # In public, with no sign-in at the edge: jellyseerr signs its users in
+      # through jellyfin.
+      - name: public
+        host: jellyseerr.jorisjonkers.dev
+        audience: anonymous
+        routes:
+          - { path: /, match: prefix, process: jellyseerr, surface: http }
+      # On the LAN, with no sign-in.
+      - name: lan
+        host: jellyseerr.jorisjonkers.dev
+        audience: lan
+        routes:
+          - { path: /, match: prefix, process: jellyseerr, surface: http }
     processes:
       - name: jellyseerr
         lifecycle: application
