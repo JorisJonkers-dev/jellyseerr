@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.7.0](https://github.com/JorisJonkers-dev/jellyseerr/compare/v3.6.1...v3.7.0) (2026-10-30)
+
+
+### Features
+
+* declare its public and LAN exposures, so the estate edge renders their routes ([#13](https://github.com/JorisJonkers-dev/jellyseerr/issues/13)) ([27e552b](https://github.com/JorisJonkers-dev/jellyseerr/commit/27e552bb92fbb772b67a3939f211ba31a722a320))
+
 ## [3.6.1](https://github.com/JorisJonkers-dev/jellyseerr/compare/v3.6.0...v3.6.1) (2026-10-21)
 
 
