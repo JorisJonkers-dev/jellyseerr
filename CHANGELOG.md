@@ -1,5 +1,12 @@
 # Changelog
 
+## [3.7.1](https://github.com/JorisJonkers-dev/jellyseerr/compare/v3.7.0...v3.7.1) (2026-11-12)
+
+
+### Bug Fixes
+
+* **hygiene:** never cancel a run of the required hygiene checks ([#21](https://github.com/JorisJonkers-dev/jellyseerr/issues/21)) ([f5a1820](https://github.com/JorisJonkers-dev/jellyseerr/commit/f5a18202da7204ef21bb90aacf66c7c4eb5ee55e))
+
 ## [3.7.0](https://github.com/JorisJonkers-dev/jellyseerr/compare/v3.6.1...v3.7.0) (2026-10-30)
 
 
